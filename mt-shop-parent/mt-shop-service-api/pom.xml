@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>mt-shop-service-api-weixin</module>
+        <module>mt-shop-service-api-member</module>
 
     </modules>
 <dependencies>
