@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api-weixin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mt-shop-service-base/mt-shop-service-api-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-weixin/src/main/java" charset="UTF-8" />
+  </component>
+</project>
