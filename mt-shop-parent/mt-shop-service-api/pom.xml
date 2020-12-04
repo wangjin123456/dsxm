@@ -17,6 +17,10 @@
 
     </modules>
 <dependencies>
+    <dependency>
+        <groupId>com.mayikt</groupId>
+        <artifactId>mt-shop-service-api-base</artifactId>
+    </dependency>
     <!--  springboot 整合web组件-->
     <dependency>
         <groupId>org.springframework.boot</groupId>

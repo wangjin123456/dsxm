@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mt-shop-service-base</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>mt-shop-service-api-base</module>
+    </modules>
 
 
 </project>

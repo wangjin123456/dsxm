@@ -25,3 +25,5 @@ spring:
           filters:
             - SwaggerHeaderFilter
             - StripPrefix=1
+      x-forwarded:
+        enabled: false

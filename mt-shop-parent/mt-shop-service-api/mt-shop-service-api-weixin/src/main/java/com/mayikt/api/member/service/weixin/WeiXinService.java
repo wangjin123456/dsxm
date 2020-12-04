@@ -24,7 +24,7 @@ public interface WeiXinService {
      * @return
      */
     @GetMapping("appinfo")
-    @ApiOperation("appinfo接口")
+   @ApiOperation("appinfo接口")
     @ApiImplicitParam(name = "userId",value = "用户id",required = true)
     @ApiResponse(code = 200,message = "响应成功")
     String appinfo(@RequestParam("userId") long userId );
@@ -35,6 +35,6 @@ public interface WeiXinService {
      * @param appPwd
      * @return
      */
-     @GetMapping("/addApp")
-     BaseResponse<String> addApp(String appId, String appPwd);
+   @GetMapping("/addApp")
+     BaseResponse<String> addApp(@RequestParam("appId") String appId,@RequestParam("appPwd")  String appPwd);
 }
