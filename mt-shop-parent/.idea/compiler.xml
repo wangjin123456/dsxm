@@ -9,14 +9,17 @@
         <module name="mt-shop-service-weixin" />
         <module name="mt-shop-service-member" />
         <module name="mt-shop-service-api-base" />
+        <module name="mt-shop-basics-springcloud-gateway" />
         <module name="mt-shop-service-api-weixin" />
         <module name="mt-shop-service-api-member" />
-        <module name="mt-shop-basics-springcloud-gateway" />
+        <module name="mt-shop-common-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mt-shop-basics" target="1.8" />
       <module name="mt-shop-basics-springcloud-gateway" target="1.8" />
+      <module name="mt-shop-common" target="1.8" />
+      <module name="mt-shop-common-core" target="1.8" />
       <module name="mt-shop-parent" target="1.8" />
       <module name="mt-shop-service-api" target="1.8" />
       <module name="mt-shop-service-api-base" target="1.8" />
@@ -31,6 +34,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mt-shop-basics-springcloud-gateway" options="-parameters" />
+      <module name="mt-shop-common" options="-parameters" />
+      <module name="mt-shop-common-core" options="-parameters" />
       <module name="mt-shop-service-api-base" options="-parameters" />
       <module name="mt-shop-service-api-member" options="-parameters" />
       <module name="mt-shop-service-api-weixin" options="-parameters" />
