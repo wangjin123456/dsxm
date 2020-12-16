@@ -1,7 +1,7 @@
 package com.mayikt.base;
 
-import org.springframework.stereotype.Component;
 
+import com.mayikt.bean.MeiteBeanUtils;
 import com.mayikt.constants.Constants;
 
 import lombok.Data;
@@ -64,4 +64,20 @@ public class BaseApiService<T> {
         return new BaseResponse<T>(code, msg, data);
     }
 
+    /**
+     * dto转为do
+     *
+     * @param dtoEntity
+     * @param doClass
+     * @param <Do>
+     * @return
+     */
+    public static <Do> Do dtoDo(Object dtoEntity, Class<Do> doClass) {
+
+        return MeiteBeanUtils.dtoToDo(dtoEntity, doClass);
+    }
+
+    public BaseResponse<T>setResult(int dbCount,T successMsg,String errorMsg){
+        return  dbCount >0 ?setResultSuccess(successMsg):setResultError(errorMsg);
+    }
 }

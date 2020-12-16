@@ -1,6 +1,8 @@
 server:
   port: 7070
 spring:
+  application:
+    name: mayikt-member
   cloud:
     nacos:
       discovery:
@@ -10,7 +12,10 @@ spring:
         server-addr: 127.0.0.1:8848
         file-extension: yaml
 
+mayikt:
+  login:
+    token:
+      prefix: memberlogin
+      channel: android,ios,pc
 
 
-  application:
-    name: mayikt-member

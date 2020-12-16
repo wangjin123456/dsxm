@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/mt-shop-common/mt-shop-common.iml" filepath="$PROJECT_DIR$/mt-shop-common/mt-shop-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/mt-shop-common-core.iml" filepath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/mt-shop-common-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-parent.iml" filepath="$PROJECT_DIR$/mt-shop-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-CodeGenerator/mt-shop-service-CodeGenerator.iml" filepath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-CodeGenerator/mt-shop-service-CodeGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api.iml" filepath="$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-base/mt-shop-service-api-base/mt-shop-service-api-base.iml" filepath="$PROJECT_DIR$/mt-shop-service-base/mt-shop-service-api-base/mt-shop-service-api-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api-member/mt-shop-service-api-member.iml" filepath="$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api-member/mt-shop-service-api-member.iml" />

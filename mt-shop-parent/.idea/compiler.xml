@@ -12,6 +12,7 @@
         <module name="mt-shop-basics-springcloud-gateway" />
         <module name="mt-shop-service-api-weixin" />
         <module name="mt-shop-service-api-member" />
+        <module name="mt-shop-service-CodeGenerator" />
         <module name="mt-shop-common-core" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="mt-shop-service-api-member" target="1.8" />
       <module name="mt-shop-service-api-weixin" target="1.8" />
       <module name="mt-shop-service-base" target="1.8" />
+      <module name="mt-shop-service-CodeGenerator" target="1.8" />
       <module name="mt-shop-service-impl" target="1.8" />
       <module name="mt-shop-service-member" target="1.8" />
       <module name="mt-shop-service-weixin" target="1.8" />
@@ -36,6 +38,7 @@
       <module name="mt-shop-basics-springcloud-gateway" options="-parameters" />
       <module name="mt-shop-common" options="-parameters" />
       <module name="mt-shop-common-core" options="-parameters" />
+      <module name="mt-shop-service-CodeGenerator" options="-parameters" />
       <module name="mt-shop-service-api-base" options="-parameters" />
       <module name="mt-shop-service-api-member" options="-parameters" />
       <module name="mt-shop-service-api-weixin" options="-parameters" />
