@@ -11,7 +11,8 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yaml
-
+  main:
+    allow-bean-definition-overriding: true
 mayikt:
   login:
     token:

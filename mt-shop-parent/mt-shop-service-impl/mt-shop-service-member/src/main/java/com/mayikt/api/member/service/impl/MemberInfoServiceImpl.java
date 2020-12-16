@@ -1,7 +1,6 @@
 
 package com.mayikt.api.member.service.impl;
 
-import com.mayikt.api.member.api.dto.req.UserLoginDto;
 import com.mayikt.api.member.api.dto.resp.UserRespDto;
 import com.mayikt.api.member.api.service.MemberInfoService;
 import com.mayikt.api.member.service.entitydo.UserDo;
@@ -11,6 +10,7 @@ import com.mayikt.base.BaseResponse;
 import com.mayikt.bean.MeiteBeanUtils;
 import com.mayikt.utils.DesensitizationUtil;
 import com.mayikt.utils.TokenUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,7 +28,7 @@ public class MemberInfoServiceImpl extends BaseApiService implements MemberInfoS
      @Autowired
      private UserMapper userMapper;
     @Override
-    public BaseResponse<UserLoginDto> getTokenUser(String token) {
+    public BaseResponse<UserRespDto> getTokenUser(String token) {
         if(Strings.isBlank(token)){
             return  setResultError("token不能为空");
         }
@@ -48,5 +48,38 @@ public class MemberInfoServiceImpl extends BaseApiService implements MemberInfoS
           userRespDto.setMobile(DesensitizationUtil.mobileEncrypt(mobile ));
         //
         return setResultSuccess(userRespDto);
+    }
+
+    @Override
+    public BaseResponse<Object> updateUseOpenId(Long userId, String openId) {
+        int reuslt = userMapper.updateUseOpenId(userId, openId);
+        return setResultDb(reuslt, "关联成功", "关联失败");
+    }
+
+    @Override
+    public BaseResponse<UserRespDto> selectByOpenId(String openId) {
+        UserDo userDo = userMapper.selectByOpenId(openId);
+        if (userDo == null) {
+            return setResultError("根据openId查询该用户没有关注过");
+        }
+        // 需要将do转换成dto
+        UserRespDto userRespDto = MeiteBeanUtils.doToDto(userDo, UserRespDto.class);
+        String mobile = userRespDto.getMobile();
+        userRespDto.setMobile(DesensitizationUtil.mobileEncrypt(mobile));
+        return setResultSuccess(userRespDto);
+    }
+
+    @Override
+    public BaseResponse<Object> cancelFollowOpenId(String openId) {
+        if (StringUtils.isEmpty(openId)) {
+            return setResultError("openId不能为空");
+        }
+        UserDo userDo = userMapper.selectByOpenId(openId);
+        if (userDo == null) {
+            return setResultError("根据openId查询该用户没有关注过");
+        }
+        // 已经关注过，则将对应的用户的openid 变为空
+        int result = userMapper.cancelFollowOpenId(openId);
+        return setResultDb(result, "取消关注成功", "取消关注成功失败!");
     }
 }

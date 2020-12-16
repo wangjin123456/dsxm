@@ -2,6 +2,7 @@
 package com.mayikt.api.member.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mayikt.api.member.api.dto.req.UserLoginDto;
 import com.mayikt.api.member.api.service.MemberLoginService;
 import com.mayikt.api.member.service.entitydo.UserDo;
@@ -49,6 +50,7 @@ public class MemberLoginServiceImpl extends BaseApiService implements MemberLogi
 
     @Autowired
     private ChannelUtils channelUtils;
+
     @Override
     public BaseResponse<JSONObject> login(UserLoginDto userLoginDto, String sourceIp
             , String channel, String deviceInfor
@@ -63,7 +65,11 @@ public class MemberLoginServiceImpl extends BaseApiService implements MemberLogi
             return setResultError("密码不能为空!");
         }
         String newPassword = MD5Util.MD5(passWord);
-        UserDo loginUserdo = userMapper.login(mobile, newPassword);
+
+        QueryWrapper<UserDo> wrapper = new QueryWrapper<>();
+        wrapper.eq("mobile", mobile);
+        wrapper.eq("pass_word", newPassword);
+        UserDo loginUserdo = userMapper.selectOne(wrapper);
         if (loginUserdo == null) {
             return setResultError("手机号码或者密码不正确");
         }
@@ -78,10 +84,11 @@ public class MemberLoginServiceImpl extends BaseApiService implements MemberLogi
         String name = applicationname.replace("-", "");
 
 
-            userToken = tokenUtils.createToken(name, userId + "");
+        userToken = tokenUtils.createToken(name, userId + "");
 
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("userToken", userToken);
+        String wxOpenId = loginUserdo.getWxOpenid();
         log.info(Thread.currentThread().getName() + ",userLoginLogDo:" + ",流程1");
 
         new Thread(new Runnable() {
@@ -89,8 +96,8 @@ public class MemberLoginServiceImpl extends BaseApiService implements MemberLogi
             public void run() {
 
 
-
-                    asyncLoginManage.loginLog(userId, sourceIp, new Date(), userToken, channel, deviceInfor);
+                asyncLoginManage.loginLLog(wxOpenId, mobile, userId, sourceIp, new Date(), userToken
+                        , channel, deviceInfor);
 
             }
         }).start();

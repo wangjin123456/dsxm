@@ -77,7 +77,7 @@ public class BaseApiService<T> {
         return MeiteBeanUtils.dtoToDo(dtoEntity, doClass);
     }
 
-    public BaseResponse<T>setResult(int dbCount,T successMsg,String errorMsg){
+    public BaseResponse<T>setResultDb(int dbCount,T successMsg,String errorMsg){
         return  dbCount >0 ?setResultSuccess(successMsg):setResultError(errorMsg);
     }
 }

@@ -39,7 +39,7 @@ public class UserDo {
      * 密码
      */
 
-    private String pass_word;
+    private String passWord;
     /**
      * 用户名称
      */
@@ -59,7 +59,7 @@ public class UserDo {
      * 注册时间
      */
 
-    private Date CREATE_TIME;
+    private Date createTime;
     /**
      * 修改时间
      */
@@ -74,16 +74,16 @@ public class UserDo {
      * 用户头像
      */
 
-    private String PIC_IMG;
+    private String picImg;
     /**
      * 用户关联 QQ 开放ID
      */
 
-    private String QQ_OPENID;
+    private String qqOpenid;
     /**
      * 用户关联 微信 开放ID
      */
-    private String WX_OPENID;
+    private String wxOpenid;
 
 
 }

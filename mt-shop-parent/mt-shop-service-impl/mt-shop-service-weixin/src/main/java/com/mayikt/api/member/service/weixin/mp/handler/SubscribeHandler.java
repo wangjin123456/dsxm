@@ -2,7 +2,10 @@ package com.mayikt.api.member.service.weixin.mp.handler;
 
 import java.util.Map;
 
+import com.mayikt.api.member.service.weixin.impl.manage.WxMpServiceManage;
 import com.mayikt.api.member.service.weixin.mp.builder.TextBuilder;
+import org.apache.logging.log4j.util.Strings;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
@@ -18,7 +21,8 @@ import me.chanjar.weixin.mp.bean.result.WxMpUser;
  */
 @Component
 public class SubscribeHandler extends AbstractHandler {
-
+@Autowired
+private WxMpServiceManage wxMpServiceManage;
     @Override
     public WxMpXmlOutMessage handle(WxMpXmlMessage wxMessage,
                                     Map<String, Object> context, WxMpService weixinService,
@@ -38,7 +42,18 @@ public class SubscribeHandler extends AbstractHandler {
                 this.logger.info("该公众号没有获取用户信息权限！");
             }
         }
+//说明没有关注该微信公众号，扫码生成二维码；连接走该类
 
+        String eventKey=wxMessage.getEventKey();
+        if(!Strings.isBlank(eventKey)){
+           String qrscene= eventKey.replace("qrscene_","");
+       long userId= Long.parseLong(qrscene);
+        //根据userId查询是否已经关注
+        String openId=wxMessage.getFromUser();
+        wxMpServiceManage.handler(userId,openId);
+        //先genju openID查询是否已经关联
+
+        }
 
         WxMpXmlOutMessage responseResult = null;
         try {

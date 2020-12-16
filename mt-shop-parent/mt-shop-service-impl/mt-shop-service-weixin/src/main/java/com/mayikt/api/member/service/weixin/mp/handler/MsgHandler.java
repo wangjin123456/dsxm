@@ -12,6 +12,7 @@ import me.chanjar.weixin.mp.api.WxMpService;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlMessage;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -53,6 +54,9 @@ public class MsgHandler extends AbstractHandler {
         if (wechatKeyword != null) {
             String keywordValue = wechatKeyword.getKeywordValue();
             return new TextBuilder().build(StringUtils.isAllBlank(keywordValue) ? defaultMsg : keywordValue, wxMessage, weixinService);
+        }
+        if(Strings.isBlank(content)){
+            return new TextBuilder().build(defaultMsg, wxMessage, weixinService);
         }
         //2查询调用第三方天气预报接口查询
         String replaceRpcWeatherUrl = rpcWeatherUrl.replace("###", content);

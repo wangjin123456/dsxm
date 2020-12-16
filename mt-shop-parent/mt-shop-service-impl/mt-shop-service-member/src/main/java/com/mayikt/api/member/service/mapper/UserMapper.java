@@ -4,10 +4,7 @@ package com.mayikt.api.member.service.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.mayikt.api.member.service.entitydo.UserDo;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -27,11 +24,23 @@ public interface UserMapper  extends BaseMapper<UserDo> {
     @Insert("INSERT INTO   meite_user VALUES ('22','1', '1', NULL, 0, 0, now(), 1, NULL, NULL, NULL);")
     int register(@Param("mobile") String mobile);
 
-    @Select("SELECT * from meite_user   where MOBILE=#{mobile}")
+    @Select("SELECT * from meite_user   where MOBILE=#{mobile} and pass_word=#{passWord}")
     UserDo login(String mobile, String passWord);
 
     @Select("SELECT * from meite_user  where MOBILE=#{mobile}")
     UserDo existMobile(String mobile);
     @Select("SELECT * from meite_user   where USER_ID=#{userId}")
     UserDo findByUser(Long userId);
+    @Update("\n" +
+            "update meite_user set WX_OPENID=#{wxOpenId}  where user_id=#{userId};")
+    int updateUseOpenId(@Param("userId") Long userId, @Param("wxOpenId") String wxOpenId);
+
+    @Select("SELECT *  from meite_user  where wx_OpenId=#{wxOpenId}")
+
+    UserDo selectByOpenId(@Param("wxOpenId") String wxOpenId);
+
+
+    @Update("\n" +
+            "update meite_user set WX_OPENID=null  where WX_OPENID=#{wxOpenId};")
+    int cancelFollowOpenId(@Param("wxOpenId") String wxOpenId);
 }

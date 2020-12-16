@@ -14,3 +14,7 @@ spring:
 
   application:
     name: mayikt-weixin
+mayikt:
+  wx:
+
+    loginTemplateId: H87s4QTwOW410ungNLD6V9KbExZX_02GQc9SqOENBAQ
