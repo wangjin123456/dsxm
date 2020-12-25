@@ -9,5 +9,6 @@
     <file url="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-CodeGenerator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-weixin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mt-shop-service-job/mt-shop-service-member-job/src/main/java" charset="UTF-8" />
   </component>
 </project>

@@ -9,11 +9,13 @@
         <module name="mt-shop-service-weixin" />
         <module name="mt-shop-service-member" />
         <module name="mt-shop-service-api-base" />
+        <module name="mt-shop-service-CodeGenerator" />
         <module name="mt-shop-basics-springcloud-gateway" />
         <module name="mt-shop-service-api-weixin" />
-        <module name="mt-shop-service-api-member" />
-        <module name="mt-shop-service-CodeGenerator" />
         <module name="mt-shop-common-core" />
+        <module name="mt-shop-service-member-job" />
+        <module name="mt-shop-service-api-member" />
+        <module name="xxl-job-admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,20 +31,24 @@
       <module name="mt-shop-service-base" target="1.8" />
       <module name="mt-shop-service-CodeGenerator" target="1.8" />
       <module name="mt-shop-service-impl" target="1.8" />
+      <module name="mt-shop-service-job" target="1.8" />
       <module name="mt-shop-service-member" target="1.8" />
+      <module name="mt-shop-service-member-job" target="1.8" />
       <module name="mt-shop-service-weixin" target="1.8" />
+      <module name="xxl-job-admin" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mt-shop-basics-springcloud-gateway" options="-parameters" />
-      <module name="mt-shop-common" options="-parameters" />
       <module name="mt-shop-common-core" options="-parameters" />
       <module name="mt-shop-service-CodeGenerator" options="-parameters" />
       <module name="mt-shop-service-api-base" options="-parameters" />
       <module name="mt-shop-service-api-member" options="-parameters" />
       <module name="mt-shop-service-api-weixin" options="-parameters" />
+      <module name="mt-shop-service-job" options="-parameters" />
       <module name="mt-shop-service-member" options="-parameters" />
+      <module name="mt-shop-service-member-job" options="-parameters" />
       <module name="mt-shop-service-weixin" options="-parameters" />
     </option>
   </component>

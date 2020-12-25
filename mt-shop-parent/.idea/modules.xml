@@ -14,8 +14,11 @@
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api-weixin/mt-shop-service-api-weixin.iml" filepath="$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api-weixin/mt-shop-service-api-weixin.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-base/mt-shop-service-base.iml" filepath="$PROJECT_DIR$/mt-shop-service-base/mt-shop-service-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-impl.iml" filepath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mt-shop-service-job/mt-shop-service-job.iml" filepath="$PROJECT_DIR$/mt-shop-service-job/mt-shop-service-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/mt-shop-service-member.iml" filepath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/mt-shop-service-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mt-shop-service-job/mt-shop-service-member-job/mt-shop-service-member-job.iml" filepath="$PROJECT_DIR$/mt-shop-service-job/mt-shop-service-member-job/mt-shop-service-member-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-weixin/mt-shop-service-weixin.iml" filepath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-weixin/mt-shop-service-weixin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mt-shop-service-job/xxl-job-admin/xxl-job-admin.iml" filepath="$PROJECT_DIR$/mt-shop-service-job/xxl-job-admin/xxl-job-admin.iml" />
     </modules>
   </component>
 </project>
