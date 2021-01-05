@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58b40a1c-c024-4c73-828a-87248fc091a3" name="Default Changelist" comment="策略模式根据beanid获取对应的类">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/src/main/java/com/mayikt/http/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/src/main/java/com/mayikt/http/HttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/target/classes/com/mayikt/http/HttpClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/target/classes/com/mayikt/http/HttpClientUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/UnionLoginStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/UnionLoginStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/impl/QQUnionLoginStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/impl/QQUnionLoginStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program Files\mvn" />
+        <option name="mavenHome" value="D:/Program Files/apache-maven" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven\conf\setting.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lmfkInjdq1yoLYO7AlQxvVXjr6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/mt-shop-service-job/mt-shop-service-member-job/src/main/java/com/mayikt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/mapper" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mayikt.job.entitydo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\works\work\dsxm\mt-shop-parent\mt-shop-service-impl\mt-shop-service-member\src\main\java\com\mayikt\api\member\service\mapper" />
+      <recent name="E:\works\work\dsxm\mt-shop-parent\mt-shop-service-impl\mt-shop-service-member\src\main\java\com\mayikt\api\member\service\entitydo" />
+      <recent name="E:\works\work\dsxm\mt-shop-parent\mt-shop-service-job\mt-shop-service-member-job\src\main\java\com\mayikt\job" />
+      <recent name="E:\works\work\dsxm\mt-shop-parent\mt-shop-service-job\mt-shop-service-member-job\src\main\resources" />
+      <recent name="E:\works\work\dsxm\mt-shop-parent\mt-shop-service-job\mt-shop-service-member-job" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AppMember">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mayikt.api.member.service.config.CodeGenerator" />
+      <module name="mt-shop-service-CodeGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mayikt.api.member.service.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mt-shop-basics-springcloud-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mayikt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mayikt.AppGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppMember" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mt-shop-service-member" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mayikt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mayikt.AppMember" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppWeiXin" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mt-shop-service-weixin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mayikt.api.member.service.weixin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mayikt.api.member.service.weixin.AppWeiXin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XxlJobExecutorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="mt-shop-service-member-job" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mayikt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mayikt.XxlJobExecutorApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Spring Boot.AppGateway" />
+      <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
+      <item itemvalue="Spring Boot.AppMember" />
+      <item itemvalue="Spring Boot.AppWeiXin" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AppMember" />
+        <item itemvalue="Spring Boot.AppWeiXin" />
+        <item itemvalue="Spring Boot.AppGateway" />
+        <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58b40a1c-c024-4c73-828a-87248fc091a3" name="Default Changelist" comment="" />
+      <created>1608207328526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608207328526</updated>
+      <workItem from="1608207333936" duration="1548000" />
+      <workItem from="1608360043871" duration="302000" />
+      <workItem from="1608690845711" duration="10555000" />
+      <workItem from="1609072353117" duration="667000" />
+      <workItem from="1609461640435" duration="9125000" />
+      <workItem from="1609811778682" duration="9252000" />
+    </task>
+    <task id="LOCAL-00001" summary="x-job定时任务调度">
+      <created>1608901689377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608901689377</updated>
+    </task>
+    <task id="LOCAL-00002" summary="策略模式根据beanid获取对应的类">
+      <created>1609818454886</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818454886</updated>
+    </task>
+    <task id="LOCAL-00003" summary="策略模式根据beanid获取对应的类">
+      <created>1609818467550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818467550</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="x-job定时任务调度" />
+    <MESSAGE value="策略模式根据beanid获取对应的类" />
+    <option name="LAST_COMMIT_MESSAGE" value="策略模式根据beanid获取对应的类" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608899802660">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1608899802660" />
+    <state x="929" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1609735326169">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="929" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609735326169" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1608898020575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608898020575" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608334573495">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608334573495" />
+    <state width="1241" height="217" key="GridCell.Tab.0.bottom" timestamp="1610066083300">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
+    <state width="1241" height="217" key="GridCell.Tab.0.center" timestamp="1610066083300">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
+    <state width="1241" height="217" key="GridCell.Tab.0.left" timestamp="1610066083300">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
+    <state width="1241" height="217" key="GridCell.Tab.0.right" timestamp="1610066083300">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
+    <state width="1241" height="217" key="GridCell.Tab.1.bottom" timestamp="1610065942954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
+    <state width="1241" height="217" key="GridCell.Tab.1.center" timestamp="1610065942954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
+    <state width="1241" height="217" key="GridCell.Tab.1.left" timestamp="1610065942954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
+    <state width="1241" height="217" key="GridCell.Tab.1.right" timestamp="1610065942954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
+    <state width="1241" height="217" key="GridCell.Tab.2.bottom" timestamp="1610065912441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
+    <state width="1241" height="217" key="GridCell.Tab.2.center" timestamp="1610065912441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
+    <state width="1241" height="217" key="GridCell.Tab.2.left" timestamp="1610065912441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
+    <state width="1241" height="217" key="GridCell.Tab.2.right" timestamp="1610065912441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1241" height="217" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1608334295242">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608334295242" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608901719684">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608901719684" />
+    <state x="917" y="194" key="chooseDestDirectoryDialog" timestamp="1608691952325">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="917" y="194" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1608691952325" />
+    <state x="468" y="120" width="837" height="584" key="find.popup" timestamp="1608885400114">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="120" width="837" height="584" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608885400114" />
+    <state x="356" y="146" key="new project wizard" timestamp="1608207480575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="356" y="146" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1608207480575" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609901147225">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609901147225" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mt_shop_parent$AppMember.ic" NAME="AppMember Coverage Results" MODIFIED="1609461700848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mayikt.*</FILTER>
+    </SUITE>
+  </component>
+</project>

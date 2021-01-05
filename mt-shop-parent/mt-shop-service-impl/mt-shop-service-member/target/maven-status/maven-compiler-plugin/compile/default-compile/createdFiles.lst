@@ -1,0 +1,15 @@
+com\mayikt\AppMember.class
+com\mayikt\api\member\service\entitydo\UserDo.class
+com\mayikt\api\member\service\fegin\WeChatLoginTemplateFeign.class
+com\mayikt\api\member\service\mapper\UserMapper.class
+com\mayikt\api\member\service\impl\MemberServiceimpl.class
+com\mayikt\api\member\service\config\MayiktTaskExecutorConfig.class
+com\mayikt\api\member\service\utils\ChannelUtils.class
+com\mayikt\api\member\service\fegin\WeiXinServiceFeign.class
+com\mayikt\api\member\service\manage\AsyncLoginManage.class
+com\mayikt\api\member\service\entitydo\UserLoginLog.class
+com\mayikt\api\member\service\impl\MemberRegisterServiceImpl.class
+com\mayikt\api\member\service\impl\MemberInfoServiceImpl.class
+com\mayikt\api\member\service\impl\MemberLoginServiceImpl$1.class
+com\mayikt\api\member\service\impl\MemberLoginServiceImpl.class
+com\mayikt\api\member\service\mapper\UserLoginLogMapper.class

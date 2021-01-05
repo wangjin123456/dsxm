@@ -1,7 +1,11 @@
 package com.mayikt.api.member.service.strategy;
 
 import com.alibaba.fastjson.JSONObject;
+import com.mayikt.api.member.service.entitydo.MeiteUnionLogin;
 import com.mayikt.base.BaseResponse;
+import org.apache.http.HttpRequest;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author taotao
@@ -11,6 +15,6 @@ import com.mayikt.base.BaseResponse;
  */
 
 public interface UnionLoginStrategy {
-   String unionLoginCallback(String unionPublicId);
+   String unionLoginCallback(HttpServletRequest request,      MeiteUnionLogin meiteUnionLogin);
 
 }

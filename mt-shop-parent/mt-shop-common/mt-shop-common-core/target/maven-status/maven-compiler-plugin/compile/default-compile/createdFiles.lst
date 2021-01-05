@@ -1,0 +1,8 @@
+com\mayikt\utils\DesensitizationUtil.class
+com\mayikt\utils\MD5Util.class
+com\mayikt\utils\RedisUtil.class
+com\mayikt\constant\HttpConstant.class
+com\mayikt\utils\SimpleDateFormatUtils.class
+com\mayikt\bean\MeiteBeanUtils.class
+com\mayikt\http\HttpClientUtils.class
+com\mayikt\utils\TokenUtils.class

@@ -14,33 +14,37 @@ import com.mayikt.utils.TokenUtils;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import java.sql.Wrapper;
 
 /**
-*@title: MemberUnionLoginServiceImpl
-*@description； 项目
-*@author taotao
-*@date 2021/1/4 10:31
-*/  
+ * @author taotao
+ * @title: MemberUnionLoginServiceImpl
+ * @description； 项目
+ * @date 2021/1/4 10:31
+ */
 @RestController
-public class MemberUnionLoginServiceImpl  extends BaseApiService implements MemberUnionLoginService {
+public class MemberUnionLoginServiceImpl extends BaseApiService implements MemberUnionLoginService {
     @Autowired
     private MeiteUnionLoginMapper meiteUnionLoginMapper;
     @Autowired
     private TokenUtils tokenUtils;
+
     @Override
     public BaseResponse<String> unionLogin(String unionPublicId) {
-        if(Strings.isBlank(unionPublicId)){
-            return  setResultError("unionPublicId为空");
+        if (Strings.isBlank(unionPublicId)) {
+            return setResultError("unionPublicId为空");
         }
-        QueryWrapper<MeiteUnionLogin> queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("union_public_id",unionPublicId);
-        queryWrapper.eq("is_availability",1);
-        MeiteUnionLogin meiteUnionLogin=meiteUnionLoginMapper.selectOne(queryWrapper);
-         if(meiteUnionLogin==null){
-             return setResultError("该渠道可能已经关闭或者不存在");
-         }
+        QueryWrapper<MeiteUnionLogin> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("union_public_id", unionPublicId);
+        queryWrapper.eq("is_availability", 1);
+        MeiteUnionLogin meiteUnionLogin = meiteUnionLoginMapper.selectOne(queryWrapper);
+        if (meiteUnionLogin == null) {
+            return setResultError("该渠道可能已经关闭或者不存在");
+        }
 
         String state = tokenUtils.createToken("member.unionLogin", "");
         String requestAddres = meiteUnionLogin.getRequestAddress() + "&state=" + state;
@@ -53,25 +57,37 @@ public class MemberUnionLoginServiceImpl  extends BaseApiService implements Memb
     @Override
     public BaseResponse<JSONObject> unionLoginCallback(String unionPublicId) {
 
-        if(Strings.isBlank(unionPublicId)){
-            return  setResultError("unionPublicId为空");
+        if (Strings.isBlank(unionPublicId)) {
+            return setResultError("unionPublicId为空");
         }
-        QueryWrapper<MeiteUnionLogin> queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("union_public_id",unionPublicId);
-        queryWrapper.eq("is_availability",1);
-        MeiteUnionLogin meiteUnionLogin=meiteUnionLoginMapper.selectOne(queryWrapper);
-        if(meiteUnionLogin==null){
+        QueryWrapper<MeiteUnionLogin> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("union_public_id", unionPublicId);
+        queryWrapper.eq("is_availability", 1);
+        MeiteUnionLogin meiteUnionLogin = meiteUnionLoginMapper.selectOne(queryWrapper);
+        if (meiteUnionLogin == null) {
             return setResultError("该渠道可能已经关闭或者不存在");
         }
 
-        String unionBeanId=meiteUnionLogin.getUnionBeanId();
-         if (Strings.isBlank(unionBeanId)){
-             return setResultError("系统参数错误");
-         }
-         //从spring容器中根据beanid查找我们的策略类
-        UnionLoginStrategy unionLoginStrategy=  SpringContextUtils.getBean(unionBeanId, UnionLoginStrategy.class);
+        String unionBeanId = meiteUnionLogin.getUnionBeanId();
+        if (Strings.isBlank(unionBeanId)) {
+            return setResultError("系统参数错误");
+        }
+        //从spring容器中根据beanid查找我们的策略类
+        UnionLoginStrategy unionLoginStrategy = SpringContextUtils.getBean(unionBeanId, UnionLoginStrategy.class);
+        HttpServletRequest request = ((ServletRequestAttributes)
+                (RequestContextHolder.currentRequestAttributes())).getRequest();
 
-         unionLoginStrategy.unionLoginCallback(unionPublicId);
-         return null;
+        String openId = unionLoginStrategy.unionLoginCallback(request, meiteUnionLogin);
+        if (Strings.isBlank(openId)) {
+            return setResultError("系统错误");
+        }
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("openId",openId);
+        jsonObject.put("unionPublicId",unionPublicId);
+        String opentoken = tokenUtils.createToken("mayikt.unionLogin.qq.", jsonObject.toJSONString());
+        JSONObject dataToken=new JSONObject();
+        dataToken.put("openToken",opentoken);
+
+        return setResultSuccess(dataToken);
     }
 }

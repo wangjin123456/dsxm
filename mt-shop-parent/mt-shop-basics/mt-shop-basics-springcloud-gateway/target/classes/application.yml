@@ -1,0 +1,29 @@
+server:
+  port: 81
+spring:
+  application:
+    name: mayikt-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      locator:
+        enabled: true
+      routes:
+        - id: mayikt-weixin
+          uri: lb://mayikt-weixin
+          predicates:
+            - Path=/mayikt-weixin/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+        - id: mayikt-member
+          uri: lb://mayikt-member
+          predicates:
+            - Path=/mayikt-member/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+      x-forwarded:
+        enabled: false

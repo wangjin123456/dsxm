@@ -1,0 +1,4 @@
+com\mayikt\api\member\service\weixin\WeChatLoginTemplate.class
+com\mayikt\api\member\service\request\LoginTemplateDto.class
+com\mayikt\api\member\service\weixin\WeiXinService.class
+com\mayikt\api\member\service\weixin\WeiXinQrcodeService.class

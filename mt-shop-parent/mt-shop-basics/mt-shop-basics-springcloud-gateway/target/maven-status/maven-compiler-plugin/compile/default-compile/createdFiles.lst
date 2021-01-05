@@ -1,0 +1,5 @@
+com\mayikt\AppGateway.class
+com\mayikt\swagger\hanlder\SwaggerHandler.class
+com\mayikt\swagger\config\SwaggerProvider.class
+com\mayikt\swagger\filter\MayiktGatewayFilter.class
+com\mayikt\swagger\filter\SwaggerHeaderFilter.class
