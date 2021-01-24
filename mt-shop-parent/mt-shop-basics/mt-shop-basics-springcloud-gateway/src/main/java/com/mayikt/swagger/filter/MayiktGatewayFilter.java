@@ -23,7 +23,7 @@ public class MayiktGatewayFilter implements GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
       String sourceIp= exchange.getRequest().getHeaders().getFirst("X-Real-IP");
-        if (StringUtils.isEmpty(sourceIp)) {
+       /* if (StringUtils.isEmpty(sourceIp)) {
             ServerHttpResponse response = exchange.getResponse();
             response.setStatusCode(HttpStatus.BAD_REQUEST);
             JSONObject jsonObject = new JSONObject();
@@ -31,7 +31,7 @@ public class MayiktGatewayFilter implements GlobalFilter {
             jsonObject.put("msg", "sourceIp is null");
             DataBuffer buffer = response.bufferFactory().wrap(jsonObject.toJSONString().getBytes());
             return response.writeWith(Mono.just(buffer));
-        }
+        }*/
         // 使用网关过滤
         return chain.filter(exchange);
 

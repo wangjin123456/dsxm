@@ -3,6 +3,8 @@ package com.mayikt.api.member.service.strategy.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mayikt.api.member.service.entitydo.MeiteUnionLogin;
+import com.mayikt.api.member.service.entitydo.UserDo;
+import com.mayikt.api.member.service.mapper.UserMapper;
 import com.mayikt.api.member.service.strategy.UnionLoginStrategy;
 import com.mayikt.base.BaseResponse;
 import com.mayikt.http.HttpClientUtils;
@@ -30,7 +32,8 @@ public class QQUnionLoginStrategy implements UnionLoginStrategy {
     private String qqOpenIdAddres;
     @Autowired
     private TokenUtils tokenUtils;
-
+    @Autowired
+    private UserMapper userMapper;
     @Override
     public String unionLoginCallback(HttpServletRequest request,  MeiteUnionLogin meiteUnionLogin) {
         System.out.println("进入qq");
@@ -40,10 +43,10 @@ public class QQUnionLoginStrategy implements UnionLoginStrategy {
             return null;
         }
         //根据授权码获取accesstoken
-        qqAccessTokenAddres = qqAccessTokenAddres.replace("{client_id}"
+        String newqqAccessTokenAddres = qqAccessTokenAddres.replace("{client_id}"
                 , meiteUnionLogin.getAppId()).replace("{client_secret}", meiteUnionLogin.getAppKey()).
-                replace("{code}", code).replace("{redirect_uri}", meiteUnionLogin.getRedirectUri());
-        String resultAccessToken = HttpClientUtils.httpGetResultString(qqAccessTokenAddres);
+                replace("{code}", code).replace("{redirect_uri}", meiteUnionLogin.getRedirectUri()).replace("\"","");
+        String resultAccessToken = HttpClientUtils.httpGetResultString(newqqAccessTokenAddres);
         boolean contains=resultAccessToken.contains("access_token=");
         if(!contains){
             return null;
@@ -69,5 +72,10 @@ public class QQUnionLoginStrategy implements UnionLoginStrategy {
         return token;
 
 
+    }
+
+    @Override
+    public UserDo getUserId(String openid) {
+        return userMapper.selectByQQOpenId(openid);
     }
 }

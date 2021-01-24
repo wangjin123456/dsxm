@@ -3,6 +3,7 @@ package com.mayikt.api.member.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.mayikt.api.member.api.service.MemberOpenIdTokenLogin;
 import com.mayikt.api.member.api.service.MemberUnionLoginService;
 import com.mayikt.api.member.service.entitydo.MeiteUnionLogin;
 import com.mayikt.api.member.service.mapper.MeiteUnionLoginMapper;
@@ -32,7 +33,8 @@ public class MemberUnionLoginServiceImpl extends BaseApiService implements Membe
     private MeiteUnionLoginMapper meiteUnionLoginMapper;
     @Autowired
     private TokenUtils tokenUtils;
-
+@Autowired
+private MemberOpenIdTokenLogin memberOpenIdTokenLogin;
     @Override
     public BaseResponse<String> unionLogin(String unionPublicId) {
         if (Strings.isBlank(unionPublicId)) {
@@ -74,6 +76,10 @@ public class MemberUnionLoginServiceImpl extends BaseApiService implements Membe
         }
         //从spring容器中根据beanid查找我们的策略类
         UnionLoginStrategy unionLoginStrategy = SpringContextUtils.getBean(unionBeanId, UnionLoginStrategy.class);
+       if(unionLoginStrategy==null){
+           return  setResultError("沒有查詢到該策略");
+       }
+
         HttpServletRequest request = ((ServletRequestAttributes)
                 (RequestContextHolder.currentRequestAttributes())).getRequest();
 
@@ -88,6 +94,6 @@ public class MemberUnionLoginServiceImpl extends BaseApiService implements Membe
         JSONObject dataToken=new JSONObject();
         dataToken.put("openToken",opentoken);
 
-        return setResultSuccess(dataToken);
+        return memberOpenIdTokenLogin.openIdLoginToken(opentoken);
     }
 }

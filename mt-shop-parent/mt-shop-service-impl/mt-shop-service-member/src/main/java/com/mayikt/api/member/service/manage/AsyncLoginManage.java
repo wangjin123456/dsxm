@@ -65,6 +65,10 @@ private WeChatLoginTemplateFeign weChatLoginTemplateFeign;
                     login_time, login_ip, equipment, openId);
             weChatLoginTemplateFeign.sendLoginTemplate(loginTemplateDto);
         }
+        //4,關聯我們的openid
+
+
+
 
     }
 

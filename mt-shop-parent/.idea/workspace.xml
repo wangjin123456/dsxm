@@ -20,15 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58b40a1c-c024-4c73-828a-87248fc091a3" name="Default Changelist" comment="策略模式根据beanid获取对应的类">
+      <change afterPath="$PROJECT_DIR$/mt-shop-service-api/mt-shop-service-api-member/src/main/java/com/mayikt/api/member/api/service/MemberOpenIdTokenLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/impl/MemberOpenIdTokenLoginImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/impl/WeiXinUnionLoginStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/src/main/java/com/mayikt/http/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/src/main/java/com/mayikt/http/HttpClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/target/classes/com/mayikt/http/HttpClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-common/mt-shop-common-core/target/classes/com/mayikt/http/HttpClientUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/src/main/java/com/mayikt/swagger/filter/MayiktGatewayFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/src/main/java/com/mayikt/swagger/filter/MayiktGatewayFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/target/classes/com/mayikt/swagger/filter/MayiktGatewayFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-basics/mt-shop-basics-springcloud-gateway/target/classes/com/mayikt/swagger/filter/MayiktGatewayFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/manage/AsyncLoginManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/manage/AsyncLoginManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/UnionLoginStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/UnionLoginStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/impl/QQUnionLoginStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/strategy/impl/QQUnionLoginStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/resources/bootstrap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/bootstrap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/impl/MemberUnionLoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/manage/AsyncLoginManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/manage/AsyncLoginManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/strategy/UnionLoginStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/strategy/UnionLoginStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/strategy/impl/QQUnionLoginStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/target/classes/com/mayikt/api/member/service/strategy/impl/QQUnionLoginStrategy.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +216,9 @@
       <workItem from="1608690845711" duration="10555000" />
       <workItem from="1609072353117" duration="667000" />
       <workItem from="1609461640435" duration="9125000" />
-      <workItem from="1609811778682" duration="9252000" />
+      <workItem from="1609811778682" duration="12280000" />
+      <workItem from="1610680094971" duration="10992000" />
+      <workItem from="1611469913263" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="x-job定时任务调度">
       <created>1608901689377</created>
@@ -228,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609818467550</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="策略模式根据beanid获取对应的类">
+      <created>1610070823165</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610070823165</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +268,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="x-job定时任务调度" />
+    <MESSAGE value="qq联合登录 ，根据code获取accesstoken  ,2 根据accesstoken获取oppenid, 3,根据oppenid获取qq消息" />
     <MESSAGE value="策略模式根据beanid获取对应的类" />
     <option name="LAST_COMMIT_MESSAGE" value="策略模式根据beanid获取对应的类" />
   </component>
@@ -256,10 +277,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1608899802660" />
-    <state x="929" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1609735326169">
+    <state x="929" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1611459303002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="929" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609735326169" />
+    <state x="929" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611459303002" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1608898020575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -268,70 +289,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608334573495" />
-    <state width="1241" height="217" key="GridCell.Tab.0.bottom" timestamp="1610066083300">
+    <state width="1241" height="441" key="GridCell.Tab.0.bottom" timestamp="1611460190665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
-    <state width="1241" height="217" key="GridCell.Tab.0.center" timestamp="1610066083300">
+    <state width="1241" height="441" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611460190665" />
+    <state width="1241" height="441" key="GridCell.Tab.0.center" timestamp="1611460190665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
-    <state width="1241" height="217" key="GridCell.Tab.0.left" timestamp="1610066083300">
+    <state width="1241" height="441" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611460190665" />
+    <state width="1241" height="441" key="GridCell.Tab.0.left" timestamp="1611460190665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
-    <state width="1241" height="217" key="GridCell.Tab.0.right" timestamp="1610066083300">
+    <state width="1241" height="441" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611460190665" />
+    <state width="1241" height="441" key="GridCell.Tab.0.right" timestamp="1611460190665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610066083300" />
-    <state width="1241" height="217" key="GridCell.Tab.1.bottom" timestamp="1610065942954">
+    <state width="1241" height="441" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611460190665" />
+    <state width="1241" height="441" key="GridCell.Tab.1.bottom" timestamp="1611460172777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
-    <state width="1241" height="217" key="GridCell.Tab.1.center" timestamp="1610065942954">
+    <state width="1241" height="441" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611460172777" />
+    <state width="1241" height="441" key="GridCell.Tab.1.center" timestamp="1611460172777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
-    <state width="1241" height="217" key="GridCell.Tab.1.left" timestamp="1610065942954">
+    <state width="1241" height="441" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1611460172777" />
+    <state width="1241" height="441" key="GridCell.Tab.1.left" timestamp="1611460172777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
-    <state width="1241" height="217" key="GridCell.Tab.1.right" timestamp="1610065942954">
+    <state width="1241" height="441" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1611460172777" />
+    <state width="1241" height="441" key="GridCell.Tab.1.right" timestamp="1611460172777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610065942954" />
-    <state width="1241" height="217" key="GridCell.Tab.2.bottom" timestamp="1610065912441">
+    <state width="1241" height="441" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611460172777" />
+    <state width="1241" height="18" key="GridCell.Tab.2.bottom" timestamp="1611460146551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
-    <state width="1241" height="217" key="GridCell.Tab.2.center" timestamp="1610065912441">
+    <state width="1241" height="18" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611460146551" />
+    <state width="1241" height="18" key="GridCell.Tab.2.center" timestamp="1611460146551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
-    <state width="1241" height="217" key="GridCell.Tab.2.left" timestamp="1610065912441">
+    <state width="1241" height="18" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1611460146551" />
+    <state width="1241" height="18" key="GridCell.Tab.2.left" timestamp="1611460146551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
-    <state width="1241" height="217" key="GridCell.Tab.2.right" timestamp="1610065912441">
+    <state width="1241" height="18" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1611460146551" />
+    <state width="1241" height="18" key="GridCell.Tab.2.right" timestamp="1611460146551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1241" height="217" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1610065912441" />
+    <state width="1241" height="18" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1611460146551" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1608334295242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608334295242" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608901719684">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610070903404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608901719684" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610070903404" />
     <state x="917" y="194" key="chooseDestDirectoryDialog" timestamp="1608691952325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="917" y="194" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1608691952325" />
-    <state x="468" y="120" width="837" height="584" key="find.popup" timestamp="1608885400114">
+    <state x="468" y="120" width="839" height="584" key="find.popup" timestamp="1611454506196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="468" y="120" width="837" height="584" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608885400114" />
+    <state x="468" y="120" width="839" height="584" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1611454506196" />
     <state x="356" y="146" key="new project wizard" timestamp="1608207480575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -340,6 +361,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609901147225" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-weixin/src/main/java/com/mayikt/api/member/service/weixin/impl/service/WeiXinServiceImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mt-shop-service-impl/mt-shop-service-member/src/main/java/com/mayikt/api/member/service/impl/MemberOpenIdTokenLoginImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mt_shop_parent$AppMember.ic" NAME="AppMember Coverage Results" MODIFIED="1609461700848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
